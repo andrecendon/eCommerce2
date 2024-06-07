@@ -1,9 +1,14 @@
 #!/bin/bash
 
 # Instala las dependencias
-pip install -r requirements.txt
-pip install --upgrade pip setuptools
-pip install greenlet==0.4.15
+python3 -m venv env 
+source env/bin/activate
 pip install Flask
+pip install flask
+pip install --upgrade pip setuptools
+pip install greenlet
+pip install -r requirements.txt
+
+
 
 flask run
