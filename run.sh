@@ -10,5 +10,5 @@ pip install greenlet
 pip install -r requirements.txt
 
 
-
+gunicorn -w 4 -b 100.20.92.101:8080
 flask run
